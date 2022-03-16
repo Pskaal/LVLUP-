@@ -33,8 +33,8 @@ namespace LVLUP_
                 Bitmap bitmap = new Bitmap(xSize, ySize);
                 Graphics g = Graphics.FromImage(bitmap as Image);
                 g.CopyFromScreen(new Point((Screen.PrimaryScreen.Bounds.Width - xSize) / 2, Screen.PrimaryScreen.Bounds.Height - 205), new Point(0, 0), new Size(xSize, ySize));
-                bitmap.Save("C:/Users/admin/source/repos/LVLUP!/TEMP/temp.jpg");
-                var Result = new IronOcr.IronTesseract().Read("C:/Users/admin/source/repos/LVLUP!/TEMP/temp.jpg");
+                bitmap.Save("C:/Users/admin/desktop/LVLUP!/TEMP/temp.jpg");
+                var Result = new IronOcr.IronTesseract().Read("C:/Users/admin/desktop/LVLUP!/TEMP/temp.jpg");
                 string currentSubText = Result.Text;
 
                 label2.Text = currentSubText;
