@@ -45,7 +45,7 @@ namespace LVLUP_
                 }
                 if (currentSubText.Contains("Lion"))
                 {
-                    label1.Text = "Hump Nessa for some sexy gems";
+                    label1.Text = "Talk to Nessa";
                 }
                 
 /*            }
